@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "BC OnPrem (Windows)",
+      "type": "al",
+      "request": "launch",
+      "environmentType": "OnPrem",
+      "server": "http://localhost:8080/BC240",
+      "port": 7049,                
+      "serverInstance": "BC240",   
+      "authentication": "Windows", 
+      "tenant": "default",
+      "startupObjectType": "Page",
+      "startupObjectId": 22,
+      "schemaUpdateMode": "Synchronize"
+    }
+  ]
+}   
