@@ -11,8 +11,6 @@
       "serverInstance": "BC240",   
       "authentication": "Windows", 
       "tenant": "default",
-      "startupObjectType": "Page",
-      "startupObjectId": 22,
       "schemaUpdateMode": "Synchronize"
     }
   ]

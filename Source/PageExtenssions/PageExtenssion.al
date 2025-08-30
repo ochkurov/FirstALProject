@@ -16,5 +16,5 @@ pageextension 50100 CustomerListExt extends "Customer List"
     end;
 
     var
-        FirstCodeunit: Codeunit FirstCodeunit;
+    // FirstCodeunit: Codeunit FirstCodeunit;
 }
