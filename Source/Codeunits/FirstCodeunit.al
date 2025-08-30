@@ -13,12 +13,6 @@ codeunit 50100 FirstCodeunit
 
     end;
 
-    procedure MyZalupa(EqualMyZalupa: Integer)
-
-    begin
-        Message('MyZalupa Equal = %1', EqualMyZalupa);
-    end;
-
     procedure MyProcedure(CustomerNo: Code[20])
     var
         Customer: Record Customer;
