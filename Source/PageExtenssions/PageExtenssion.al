@@ -13,6 +13,7 @@ pageextension 50100 CustomerListExt extends "Customer List"
     begin
         //Message('App published: Hello world');
         FirstCodeunit.MyProcedure('10000');
+        FirstCodeunit.MyGoodProcedure('9000');
     end;
 
     var

@@ -13,6 +13,16 @@ codeunit 50100 FirstCodeunit
 
     end;
 
+    procedure MyGoodProcedure(CustomerNo: Code[20])
+    var
+        Customer: Record Customer;
+    begin
+        if Customer.Get(CustomerNo) then
+            Message('Customer Name is = %1', Customer.Name)
+        else
+            Message('Customer with No. -%1 not found', CustomerNo);
+    end;
+
     procedure MyProcedure(CustomerNo: Code[20])
     var
         Customer: Record Customer;
