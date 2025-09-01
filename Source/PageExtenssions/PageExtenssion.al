@@ -4,18 +4,25 @@
 
 namespace DefaultPublisher.FirstALProject;
 using Microsoft.Sales.Customer;
-
+using Microsoft.Purchases.Document;
 //using Microsoft.Sales.Customer;
 
-pageextension 50100 CustomerListExt extends "Customer List"
+pageextension 1000000 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
     begin
         //Message('App published: Hello world');
-        FirstCodeunit.MyProcedure('10000');
-        FirstCodeunit.MyGoodProcedure('9000');
+        VendorHelper.VendorHelperProcedure();
+        VendorHelper.GetVendorCurrentAdressProcedure('10000');
+        VendorHelper.ShowSumPurchasesByOrders("Purchase Document Type"::Order, '10000');
+
+        // FirstCodeunit.MyGoodProcedure('9000');
     end;
 
     var
-        FirstCodeunit: Codeunit FirstCodeunit;
+    //FirstCodeunit: Codeunit FirstCodeunit;
+    var
+        VendorHelper: Codeunit VendorHelper;
+
+
 }

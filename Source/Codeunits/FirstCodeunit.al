@@ -1,4 +1,4 @@
-codeunit 50100 FirstCodeunit
+codeunit 1000001 FirstCodeunit
 {
     Access = Internal;
     Subtype = Normal;

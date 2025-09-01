@@ -1,15 +1,7 @@
 {
-    "linterCop.repositories": [
-        {
-            "url": "https://github.com/StefanMaron/BusinessCentral.LinterCop",
-            "token": "your-github-token",
-            "fileName": "YourAnalyzer.dll",
-            "shortName": "YourAnalyzer"
-        },
-        {
-            "url": "https://github.com/AnotherOrg/AnotherAnalyzer",
-            "fileName": "AnotherAnalyzer.dll",
-            "shortName": "AnotherAnalyzer"
-        }
-    ]
+   "al.enableCodeAnalysis": true,
+"al.codeAnalyzers": [
+    "${CodeCop}"  // оставь только стандартный CodeCop
+]
+
 }
