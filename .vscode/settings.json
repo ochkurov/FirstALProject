@@ -1,7 +1,11 @@
 {
    "al.enableCodeAnalysis": true,
 "al.codeAnalyzers": [
-    "${CodeCop}"  // оставь только стандартный CodeCop
-]
-
+    "${CodeCop}",
+    "${UICop}",
+    "${analyzerFolder}BusinessCentral.LinterCop.dll"
+],
+"CRS.FileNamePattern":"<ObjectName>.<ObjectTypeShortPascalCase>.al",
+"CRS.OnSaveAlFileAction": "Rename",
+"CRS.FileNamePatternExtensions": "<ObjectName>.<ObjectTypeShortPascalCase>.al"
 }

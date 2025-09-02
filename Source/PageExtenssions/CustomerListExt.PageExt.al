@@ -11,16 +11,17 @@ pageextension 1000000 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
     begin
-        //Message('App published: Hello world');
         VendorHelper.VendorHelperProcedure();
         VendorHelper.GetVendorCurrentAdressProcedure('10000');
         VendorHelper.ShowSumPurchasesByOrders("Purchase Document Type"::Order, '10000');
 
-        // FirstCodeunit.MyGoodProcedure('9000');
+        FirstCodeunit.MyGoodProcedure('9000');
     end;
 
+
     var
-    //FirstCodeunit: Codeunit FirstCodeunit;
+        FirstCodeunit: Codeunit FirstCodeunit;
+
     var
         VendorHelper: Codeunit VendorHelper;
 
