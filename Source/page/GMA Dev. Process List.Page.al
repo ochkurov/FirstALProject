@@ -1,40 +1,27 @@
 page 1000008 "GMA Dev. Process List"
 {
-    PageType = Document;
+    PageType = List;
     ApplicationArea = All;
-    UsageCategory = Administration;
-    SourceTable = TableName;
+    SourceTable = "GMA Dev. Process Header";
     Editable = false;
+    CardPageId = "GMA Dev. Process Header Card";
+    Caption = 'GMA Device Processes';
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            repeater(General)
             {
-                field(Name; NameSource)
+                field("No."; Rec."No.")
                 {
-
+                    ApplicationArea = All;
+                }
+                field("Description"; Rec."Description ")
+                {
+                    ApplicationArea = All;
                 }
             }
         }
     }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
-    var
-        myInt: Integer;
 }

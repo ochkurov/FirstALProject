@@ -3,38 +3,23 @@ page 1000007 "GMA Devices"
     PageType = List;
     Editable = true;
     ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = "GMA Device";
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            repeater(General)
             {
-                field(Name; NameSource)
+                field("Code"; Rec."Code")
                 {
-
+                    ApplicationArea = All;
+                }
+                field("Description"; Rec."Description")
+                {
+                    ApplicationArea = All;
                 }
             }
         }
     }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
-    var
-        myInt: Integer;
 }
