@@ -1,39 +1,28 @@
-page 1000009 "GMA Process Header SubPage"
+page 1000010 "GMA Process Header SubPage"
 {
     PageType = ListPart;
     ApplicationArea = All;
-    UsageCategory = Administration;
-    SourceTable = TableName;
+    SourceTable = "GMA Dev. Process Line";
+    Editable = true;
+    DelayedInsert = true;
+    AutoSplitKey = true;
+    Caption = 'GMA Device Process Lines';
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            repeater(General)
             {
-                field(Name; NameSource)
+                field("Device Code"; Rec."Device Code")
+                {
+
+                }
+                field("Quantity"; Rec."Quantity")
                 {
 
                 }
             }
         }
     }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
-    var
-        myInt: Integer;
 }

@@ -24,4 +24,8 @@ table 1000004 "GMA Device"
             Clustered = true;
         }
     }
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Code", "Description") { }
+    }
 }
