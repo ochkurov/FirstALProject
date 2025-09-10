@@ -11,5 +11,4 @@ pageextension 1000001 "Inventory Setup Page Extension" extends "Inventory Setup"
             }
         }
     }
-
 }
