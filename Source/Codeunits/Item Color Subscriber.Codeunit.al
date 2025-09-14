@@ -18,5 +18,4 @@ codeunit 1000019 "Item Color Subscriber"
             // Никаких MODIFY не нужно — мы на OnBeforeInsert: изменения попадут в DB вместе с вставкой
         end;
     end;
-} 
-что мы тут делаем давай построчно
+} ы
