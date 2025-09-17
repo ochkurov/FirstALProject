@@ -21,8 +21,6 @@ pageextension 1000000 CustomerListExt extends "Customer List"
 
     var
         FirstCodeunit: Codeunit FirstCodeunit;
-
-    var
         VendorHelper: Codeunit VendorHelper;
 
 
