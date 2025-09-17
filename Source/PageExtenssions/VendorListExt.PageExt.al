@@ -68,6 +68,27 @@ pageextension 1000020 VendorListExt extends "Vendor List"
                     RecRefField.Close();
                 end;
             }
+            action(VendorCreator)
+            {
+                Caption = 'Create Vendor RecRef';
+                ApplicationArea = All;
+                Image = Open;
+                Promoted = true;
+                ToolTip = 'When the button is clicked a new Vendor should be created with the name "RecordRef example"';
+                trigger OnAction()
+                var
+                    RecRefField: RecordRef;
+                    FieldRefField: FieldRef;
+                    NewVendorName: Label 'RecordRef example', Comment = 'This is a new Vendor name';
+                begin
+                    RecRefField.Open(Database::Vendor);
+                    RecRefField.Init();
+                    FieldRefField := RecRefField.Field(4);
+                    FieldRefField.Value := NewVendorName;
+                    RecRefField.Insert();
+                    Message('The new Vendor this name - %1 already created!', NewVendorName)
+                end;
+            }
         }
     }
 }
