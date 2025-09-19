@@ -13,7 +13,7 @@ pageextension 1000020 VendorListExt extends "Vendor List"
                 Image = Open;
                 Promoted = true;
 
-                trigger OnAction() ы
+                trigger OnAction()
                 var
                     RecRef: RecordRef;
                     FieldRef: FieldRef;
