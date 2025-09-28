@@ -44,7 +44,7 @@ query 1000023 "VendorItemPurchaseQty"
                     column(TotalQuantity; Quantity)
                     {
                         Caption = 'Total Quantity';
-                        Method = Sum; // теперь правильно, потому что Quantity из Purchase Line
+                        Method = Sum;
                     }
                 }
             }
