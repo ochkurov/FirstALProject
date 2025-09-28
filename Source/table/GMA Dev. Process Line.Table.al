@@ -38,4 +38,4 @@ table 1000006 "GMA Dev. Process Line"
     }
 
 
-}s
+}
